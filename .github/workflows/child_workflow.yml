@@ -1,0 +1,10 @@
+name: Child Worflow Template
+
+on: 
+  push: 
+    branches: [main]
+    
+extends:
+  template: parent_workflow.yml
+  parameters:
+      yesNo: false # set to a non-boolean value to have the build fail
